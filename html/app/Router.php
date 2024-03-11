@@ -27,20 +27,14 @@ class Router{
             return $this->routes[$uri];
         }
         else{
-            
-            $newUri = $uriPart[0].'/'.$uriPart[1];
-            // tikrinam ar egzistuoja pirma slasho dalis masyve
-            if(array_key_exists($newUri, $this->routes)){
-                $this->routes[$uri] = $this->routes[$newUri];
-                unset($this->routes[$newUri]);
-                if(array_key_exists($uri, $this->routes)){
-                    return $this->routes[$uri];
+                $newUri = '/'.$uriPart[1];
+                if(array_key_exists($newUri, $this->routes)){
+                    return $this->routes[$newUri];
                 }
                 else{
                     return $this->routes[404];
                 }
             }
-        }
     }
 
 }
