@@ -26,7 +26,7 @@ class Company{
      */
     public function createCompany(array $company){
         $this->name = $company['name'];
-        $this->code = $company['code'];
+        $this->code = (int)$company['code'];
         $this->vatCode = $company['vatCode'];
         $this->adress = $company['adress'];
         $this->phone = $company['phone'];
