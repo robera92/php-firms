@@ -1,1 +1,4 @@
-mysql_data
+# SQL Server files
+*.mdf
+*.ldf
+*.sock

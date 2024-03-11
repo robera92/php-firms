@@ -2,7 +2,7 @@
 require('vendor/autoload.php');
 
 
-use ToDo\Request;
-use ToDo\Router;
+use App\Request;
+use App\Router;
 
 require Router::load('routes.php')->direct(Request::uri());

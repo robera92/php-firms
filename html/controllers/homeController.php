@@ -1,11 +1,11 @@
 <?php
 
-use ToDo\Database;
-use ToDo\Task;
+use App\Database;
+use App\Company;
 
 $connection = Database::connect();
 
-$tasks = new Task($connection);
+$companies = new Company($connection);
 
 
-require 'view/pages/home.view.php';
+require 'view/index.view.php';

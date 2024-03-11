@@ -1,6 +1,6 @@
 <?php
 
-namespace ToDo;
+namespace App;
 use PDO;
 
 class Database{
@@ -8,7 +8,7 @@ class Database{
     private static $host = 'mysql:host=db';
     private static $user = 'root';
     private static $password = 'root_password';
-    private static $database = 'todo';
+    private static $database = 'companies';
 
     private static $options = [
         PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING
