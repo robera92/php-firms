@@ -1,0 +1,8 @@
+{
+    "autoload": {
+        "psr-4": {
+            "ToDo\\": "app"
+        }
+    },
+    "require": {}
+}
